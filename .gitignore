@@ -1,10 +1,13 @@
-# Data — keep folder structure, ignore contents
+# Data — track CSVs, ignore other contents (binaries handled below)
 data/raw/*
 data/interim/*
 data/processed/*
 !data/raw/.gitkeep
 !data/interim/.gitkeep
 !data/processed/.gitkeep
+!data/raw/*.csv
+!data/interim/*.csv
+!data/processed/*.csv
 
 # Python
 __pycache__/
@@ -25,6 +28,7 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+.claude/
 
 # Big outputs
 *.parquet
